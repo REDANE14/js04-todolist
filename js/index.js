@@ -29,13 +29,13 @@ var todoMaker = function(text) {
 
     todoList.appendChild(todo)
     todo.style.listStyleType = "none";
-       document.getElementById('clear').disabled = false;
+    document.getElementById('clear').disabled = false;
 
 }
 
 button.addEventListener('click', function() {
     while (todoList.firstChild) {
         todoList.removeChild(todoList.firstChild)
-     
+
     }
 });
